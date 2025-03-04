@@ -7,6 +7,10 @@ import { getCartDataAsync } from "../services/Action/ProductAction";
 import { auth } from "../config/firebase";
 import Kilos from "./Kilos";
 
+// image  import
+
+import Flipkart_Logo from "../image/Flipkart_Logo.svg"
+
 const Header = () => {
     const dispatch = useDispatch();
     const navigate = useNavigate();
@@ -45,7 +49,7 @@ const Header = () => {
             <div className="bg-secondary-subtle mb-4">
                 <Navbar expand="md">
                     <Navbar.Brand as={Link} to="/" className="text-white fw-bold fs-4">
-                        <img src="/src/image/fkheaderlogo_exploreplus-44005d.svg" alt="Logo" />
+                        <img src={Flipkart_Logo} alt="Logo" />
                     </Navbar.Brand>
 
                     <Navbar.Toggle aria-controls="navbar-nav" />
@@ -60,9 +64,9 @@ const Header = () => {
                                     value={searchTerm}
                                     onChange={handleSearch}
                                 />
-                                <Button type="submit" className="position-absolute top-50 end-0 translate-middle-y">
+                                <button type="submit" className="position-absolute top-50 end-0 translate-middle-y border-0 bg-transparent">
                                     <FiSearch />
-                                </Button>
+                                </button>
                             </div>
                         </Form>
 

@@ -36,10 +36,10 @@ const Footer = () => {
                     <Col xs={12} sm={6} md={3}>
                         <h5>Follow Us</h5>
                         <div className="d-flex gap-3 mt-2">
-                            <FiFacebook size={20} />
-                            <FiTwitter size={20} />
-                            <FiInstagram size={20} />
-                            <FiLinkedin size={20} />
+                            <FiFacebook size={40} className="bg-danger text-white p-2 rounded-circle" />
+                            <FiTwitter size={40} className="bg-danger text-white p-2 rounded-circle" />
+                            <FiInstagram size={40} className="bg-danger text-white p-2 rounded-circle" />
+                            <FiLinkedin size={40} className="bg-danger text-white p-2 rounded-circle" />
                         </div>
                     </Col>
                 </Row>
